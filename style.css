@@ -1,0 +1,105 @@
+/*colours */
+:root{
+  --firstcolor:#ff1250;
+  --background:#fefee2;
+  --darkbackground:#0d3a64;
+  --darkcolor:#ffffff;
+
+}
+.dark-theme{
+background-color: var(--darkbackground);
+color:var(--darkcolor);
+}
+
+/* Dark mode button */
+
+.moon{
+  display: block;
+  position:fixed;
+  left:4vw;
+}
+
+/* Global styles */
+body{
+  margin:0;
+  padding:0;
+  border: 10px solid var(--firstcolor);
+  background-color: var(--background);
+  font-family: 'Assistant', sans-serif;
+  text-align: center;
+
+
+}
+
+.picture-infos, .degree-experience, .languages-skills-passion, .front, .back {
+  flex-direction: column;
+}
+/*picture*/
+img, input {
+  border-radius: 50%;
+}
+
+/*margin*/
+
+h3{
+  margin-top: 10vh;
+}
+
+p,li{
+  margin-top: 5px;
+  font-size: 20px;
+}
+p{
+  margin:5vw;
+}
+
+h4,a{
+  color: var(--firstcolor);
+  padding-top: 15px;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+/*media queries*/
+@media screen and (min-width:611px){
+  body{
+    border: 25px solid var(--firstcolor);
+    font-size: 25px;
+  }
+  img{
+    margin-right: 4vw;
+  }
+  .picture-infos, .degree-experience, .languages-skills-passion, .front-back{
+  flex-direction: row;
+  display: flex;
+  justify-content:center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
+
+  .degree, .experience, .Languages, .skills, .passion{
+    width:600px;
+  }
+
+.experience, .degree{
+  margin-right: 10vh;
+  margin-left: 10vh;
+}
+  p{
+    font-size: 25px;
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-bottom: 5vh
+  }
+ 
+  .back, .front{
+    width: 300px;
+  }
+
+  .languages-skills-passion{
+    display: flex;
+   }
+  }
